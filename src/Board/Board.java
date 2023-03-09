@@ -2,10 +2,10 @@ package Board;
 
 import java.time.LocalDateTime;
 
-public class Board { // ÆÄÀÏÀ» ÃÑ 3°³·Î ³ª´©¾ú½À´Ï´Ù.
-	private int id; // °Ô½Ã±Û ID
-	private String title; // Á¦¸ñ
-	private String content; // ³»¿ë
+public class Board { // íŒŒì¼ì„ ì´ 3ê°œë¡œ ë‚˜ëˆ„ì—ˆìŠµë‹ˆë‹¤.
+	private int id; // ê²Œì‹œê¸€ ID
+	private String title; // ì œëª©
+	private String content; // ë‚´ìš©
 
 	public Board(int id, String title, String content) {
 		this.id = id;
@@ -23,20 +23,21 @@ public class Board { // ÆÄÀÏÀ» ÃÑ 3°³·Î ³ª´©¾ú½À´Ï´Ù.
 
 	public String getContent() {
 		return content;
-	} // ID , Á¦¸ñ , ³»¿ë À» °®´Â´Ù.
+	} // ID , ì œëª© , ë‚´ìš© ì„ ê°–ëŠ”ë‹¤.
 
-	// Á¦¸ñÀ» ¼³Á¤ÇÑ´Ù.
+	// ì œëª©ì„ ì„¤ì •í•œë‹¤.
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
-	// ³»¿ëÀ» ¼³Á¤ÇÑ´Ù.
+	// ë‚´ìš©ì„ ì„¤ì •í•œë‹¤.
 	public void setContent(String content) {
 		this.content = content;
 	}
 
 	@Override
 	public String toString() {
-		return "ID: " + id + "\n Á¦¸ñ: " + title + "\n ³»¿ë:" + content + "\n";
+		return "ID: " + id + "\n ì œëª©: " + title + "\n ë‚´ìš©:" + content + "\n";
 	}
 }
+// ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤.
